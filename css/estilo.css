@@ -115,6 +115,13 @@
 	-webkit-transition: all .50s ease-in-out;
 }
 
+/*footer*/
+footer a i {
+	text-align: center;
+	font-size: 40px;
+    color: #ff3859;
+}
+
 /*Cofigurações gerais*/
 .underline {
 	content: '';
@@ -135,6 +142,3 @@ form button {
 	background-color: #ff3859;
 	color: #f2f0f7;
 }
-/*.mtop {
-	margin-top: 105px !important;
-}*/
