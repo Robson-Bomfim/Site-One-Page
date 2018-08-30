@@ -1,4 +1,25 @@
 
+	// Faz animação para subir
+$(".fa-chevron-up").click(function(event) {
+
+    event.preventDefault();
+    jQuery('html, body').animate({scrollTop: 0}, 700);
+
+});
+
+
+/* SCRIPT JQUERY PARA SROLL DA NAVBAR */
+$("nav a").click(function(event){
+	event.preventDefault();
+	let id = $(this).attr("href");
+	targetOffset = $(id).offset().top;
+	//menuHeight = $("nav").innerHeight();
+	$("html, body").animate({
+		scrollTop: targetOffset - 80
+	}, 700);
+});
+
+
  /* SCRIPT JQUERY PARA TROCAR DE COR NAVBAR */
 $(document).scroll(function () {
 
@@ -16,8 +37,9 @@ $(document).scroll(function () {
 
 });
 
+
 // Faz animação para aparecer e sumir
-if ($(this).scrollTop() > 80) {
+if ($(this).scrollBottom()) {
 
         $(".fa-chevron-up").addClass( "fixed-bottom" );
 
@@ -25,15 +47,6 @@ if ($(this).scrollTop() > 80) {
         
         $(".fa-chevron-up").removeClass( "fixed-bottom" );
     }
-
-        
-// Faz animação para subir
-$(".fa-chevron-up").click(function(event) {
-
-    event.preventDefault();
-    jQuery('html, body').animate({scrollTop: 0}, 500);
-
-});
 
 
         
